@@ -100,17 +100,17 @@ class Tag():
 				content = content.replace(comment, (len(comment))*'.')
 
 		# script
-		unparseable = content.split('<script')
-		content = unparseable.pop(0)
-		l = len(unparseable)
-		i = 0
-		while i < l:
-			tmp = unparseable[i].split('</script>')
-			content += '.......'
-			content += len(tmp.pop(0))*'.'
-			content += '.........'
-			content += ".........".join(tmp)
-			i += 1
+		# unparseable = content.split('<script')
+		# content = unparseable.pop(0)
+		# l = len(unparseable)
+		# i = 0
+		# while i < l:
+		#	tmp = unparseable[i].split('</script>')
+		#	content += '.......'
+		#	content += len(tmp.pop(0))*'.'
+		#	content += '.........'
+		#	content += ".........".join(tmp)
+		#	i += 1
 
 		# style
 		unparseable = content.split('<style')
